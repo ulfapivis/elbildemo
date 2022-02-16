@@ -11,15 +11,16 @@
     <link rel="icon" type="image/png" sizes="180x180" href="assets/img/favicon180.png?h=f8dd9ce7af01e6c73e3ba31e7083c6ae">
     <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon192.png?h=812bdd9f4a9e2fe212acacbf6f6a5be4">
     <link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicon512.png?h=83528fcdec89a312bb71fb54dbfcf708">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=c0d1dd4c9d5508165e2bb32d56801930">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=cecade0fdbf65dcdf5df7f9dd8a7b3c7">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alatsi&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo+Black&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed&amp;display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css?h=4d3a72d713ba24c6de13978c815bf8a8">
+    <link rel="stylesheet" href="assets/css/styles.min.css?h=3889884512daf534127d17bc3a497307">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.2/css/bootstrap-slider.min.css">
@@ -67,7 +68,7 @@
                     <li class="nav-item"><a class="nav-link active" href="index-2.html">Hem</a></li>
                     <li class="nav-item"><a class="nav-link" href="nyheter.html">Nyheter</a></li>
                     <li class="nav-item"><a class="nav-link" href="samarbetspartners.html">Samarbetspartners</a></li>
-                    <li class="nav-item"><a class="nav-link" href="kampanjer.html">Kampanjer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ost.html">Kampanjer</a></li>
                     <li class="nav-item"><a class="nav-link" href="omoss.html">Om Oss</a></li>
                     <li class="nav-item"><a class="nav-link" href="kontakt.html">Mer Info</a></li>
                     <li class="nav-item"></li>
@@ -178,13 +179,10 @@ I Sverige utbetalas 70.000 SEK i stöd till ägare ca 6 mån. efter leverans">Pr
 så mycket som möjligt och sedan återkopplad till modellen.
 Indexsiffran är baserad på räckvidd i stad, motorväg och
 kombinerade intervall i både kallt och milt väder.">Räckvidd [km]<a href="#" data-bs-target="#modal-2" data-bs-toggle="modal"><i class="fa fa-info-circle" ></i></a></th>
-        <th data-bs-toggle="tooltip" title="Anger ifall dragkrok går att montera.">Dragkrok<a href="#" data-bs-target="#modal-dragkrok" data-bs-toggle="modal"><i class="fa fa-info-circle" ></i></a></th> 
+        <th data-bs-toggle="tooltip" title="Anger ifall dragkrok går att montera.">Dragkrok<a href="#" data-bs-target="#modal-3" data-bs-toggle="modal"><i class="fa fa-info-circle" ></i></a></th> 
         <th>Takräcke</th>
-        <th data-bs-toggle="tooltip" title="'Effetivitet' Kalkylerad energikonsumption för framdrivning och ombordsystem. Lägre = effektivare.">Effektivitet [Wh/km]<a href="#" data-bs-target="#modal-effektivitet" data-bs-toggle="modal"><i class="fa fa-info-circle" ></i></a></th> 
-
-
-        <th data-bs-toggle="tooltip" title="'Laddningshastighet' angivet i km per timme. 280 km/h innebär att det tar 1 timme att ladda för en körsträcka på 28 mil. 
-        Sträckan kan variera beroende på faktorer som utomhustemperatur, batteriets tillstånd och körstil.">Snabbladdning [km/h]<a href="#" data-bs-target="#modal-snabbladdning" data-bs-toggle="modal"><i class="fa fa-info-circle" ></i></a></th>
+        <th>Effektivitet [Wh/km]</th>
+        <th>Snabbladdning [km/h]</th>
         <th>Batteristorlek [kWh]</th>
         <th>Typ</th>
         <th>Maxlast [kg]</th>
@@ -221,55 +219,12 @@ kombinerade intervall i både kallt och milt väder.">Räckvidd [km]<a href="#" 
                     <h4 class="modal-title">Räckvidd</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <p>Indexsiffra baserat på en modell och verifierad i praktiken så mycket som möjligt och sedan återkopplad till modellen.<br>Indexsiffran är baserad på räckvidd i stad, motorväg och kombinerade intervall i både kallt och milt väder.</p>
+                    <p>'indexsiffra' baserat på en modell och verifierad i praktiken så mycket som möjligt och sedan återkopplad till modellen.<br>Indexsiffran är baserad på räckvidd i stad, motorväg och kombinerade intervall i både kallt och milt väder.</p>
                 </div>
                 <div class="modal-footer"><button class="btn btn-success" type="button" data-bs-dismiss="modal">Close</button></div>
             </div>
         </div>
     </div>
-
-    <div class="modal fade" role="dialog" tabindex="-1" id="modal-snabbladdning">
-        <div class="modal-dialog modal-sm" role="document">
-            <div class="modal-content">
-                <div class="modal-header" data-bs-toggle="tooltip" data-bss-tooltip="">
-                    <h4 class="modal-title">Snabbladdning</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Laddningshastighet angivet i km per timme. 280 km/h innebär att det tar 1 timme att ladda för en körsträcka på 28 mil.<br>Sträckan kan variera beroende på faktorer som utomhustemperatur, batteriets tillstånd och körstil.</p>
-                </div>
-                <div class="modal-footer"><button class="btn btn-success" type="button" data-bs-dismiss="modal">Close</button></div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" role="dialog" tabindex="-1" id="modal-dragkrok">
-        <div class="modal-dialog modal-sm" role="document">
-            <div class="modal-content">
-                <div class="modal-header" data-bs-toggle="tooltip" data-bss-tooltip="">
-                    <h4 class="modal-title">Dragkrok</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Anger ifall dragkrok går att montera.</p>
-                </div>
-                <div class="modal-footer"><button class="btn btn-success" type="button" data-bs-dismiss="modal">Close</button></div>
-            </div>
-        </div>
-    </div>    
-
-    <div class="modal fade" role="dialog" tabindex="-1" id="modal-effektivitet">
-        <div class="modal-dialog modal-sm" role="document">
-            <div class="modal-content">
-                <div class="modal-header" data-bs-toggle="tooltip" data-bss-tooltip="">
-                    <h4 class="modal-title">Effektivitet</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Kalkylerad energikonsumption för framdrivning och ombordsystem. Lägre = effektivare.</p>
-                </div>
-                <div class="modal-footer"><button class="btn btn-success" type="button" data-bs-dismiss="modal">Close</button></div>
-            </div>
-        </div>
-    </div>
-
     <footer class="footer-basic">
         <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
         <ul class="list-inline">
@@ -282,15 +237,7 @@ kombinerade intervall i både kallt och milt väder.">Räckvidd [km]<a href="#" 
         <p class="copyright">FXRcms © 2022</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="assets/js/script.min.js?h=17fcc5a2580fc70cc0ca5a13b54fb437"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/bs-init.js"></script>
-    <script src="assets/js/vanilla-zoom.js"></script>
-    <script src="assets/js/theme.js"></script>
-    <!-- <script src="assets/js/script.min.js"></script> -->
-    <script src="assets/js/script3.js"></script>
-    <script src="assets/js/smart-forms.min.js"></script>
+    <script src="assets/js/script.min.js?h=b63831e10b6f154274ec394101e3eb9f"></script>
 </body>
 
 </html>
-
