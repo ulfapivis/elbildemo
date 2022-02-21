@@ -108,7 +108,7 @@ var $inputFromAge = $(".inputFromAge"),
 
   
   $(".rangeSalary").ionRangeSlider({
-    skin: "modern",type: "double",postfix: "km", min: 10, max: 1000,
+    skin: "modern",type: "double",postfix: "km", min: 90, max: 1000,
     onStart: updateInputs,
     onChange: updateInputs,
     onFinish: updateInputs
